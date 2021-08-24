@@ -1,0 +1,94 @@
+body{
+  background-color: #FAF8EF;
+}
+
+.all{
+  max-width: 410px;
+  margin-left: auto;
+  margin-right: auto;
+  display:flex;
+  flex-direction: column;
+}
+.header{
+  width: 410px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items:center;
+  justify-content:space-between;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.name{
+  font-size: 3rem;
+  font-weight: bold;
+}
+.score-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #776E65;
+  font-family: 'Manrope', sans-serif;
+}
+.score-title{
+  font-size: 2rem;
+}
+#score{
+  font-size: 2rem;
+}
+
+.instruction{
+  max-width: 410px;
+  font-size: 1rem;
+  padding-bottom: 20px;
+}
+
+.grid{
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap; /* TODO: how wrapping is done? zigzag or line by line? */
+  width: 400px;
+  height: 400px;
+  background-color: #BBADA0;
+  border-radius: 8px;
+}
+.grid div{
+  font-size: 3rem;
+  color: #776E65;
+  margin: 5px;
+  border-radius: 5px;
+  height:90px;
+  width: 90px;
+  background-color: #EEE4DA;
+  text-align: center;
+  line-height: 90px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
+}
+
+.zoom-in-zoom-out {
+  font-size: 3rem;
+  color: #776E65;
+  margin: 5px;
+  border-radius: 5px;
+  height:90px;
+  width: 90px;
+  background-color: #EEE4DA;
+  text-align: center;
+  line-height: 90px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: bold;
+  animation: zoom-in-zoom-out 0.1s ease-out;
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(0.5, 0.5);
+  }
+  /* 70% {
+    transform: scale(1.2, 1.2);
+  } */
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
